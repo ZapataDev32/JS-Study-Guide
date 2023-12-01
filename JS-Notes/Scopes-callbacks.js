@@ -155,3 +155,43 @@ const functionArray = [greet, function(name) {
 
 functionArray[0]('Bob');  // Calls the greet function
 functionArray[1]('Maria');  // Calls the second function
+
+
+// what is a Callback? 
+
+// In JavaScript, a callback is a function passed as an argument to another function. The callback function is then invoked or executed inside the outer function. Callbacks are commonly used in asynchronous operations, event handling, and other scenarios where you want to perform actions after certain events or operations have completed.
+
+// example of a CALLBACK:
+
+// Example function with a callback
+
+// Function with a callback
+function greet(name, callback) {
+    console.log("Hello, " + name + "!");
+    callback(name); // invoking the callback function
+}
+  
+  // Callback function
+  function sayGoodbye(name) {
+    console.log("Goodbye, " + name + "!");
+}
+  
+  // Using the function with a callback
+greet("Alice", sayGoodbye);
+  
+
+// another example for callbacks
+
+function iLove(fruit, callback){
+    console.log("I love " + fruit)
+    callback(fruit) // we are setting up a blank funtion to use in the future.
+  }
+  
+  function otherFruit(fruit){
+    console.log("But i Hate " + fruit + " Juice")
+  }
+  
+  iLove("apple", otherFruit)
+
+
+ 

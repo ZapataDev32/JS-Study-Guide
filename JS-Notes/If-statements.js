@@ -184,6 +184,9 @@ function greet(language) {
     }
   }
   
-  console.log(greet('English')); // Outputs 'Hello!'
-  console.log(greet('German'));  // Outputs 'Language not supported'
+console.log(greet('English')); // Outputs 'Hello!'
+console.log(greet('German'));  // Outputs 'Language not supported'
   
+
+
+
