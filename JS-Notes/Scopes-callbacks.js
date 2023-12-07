@@ -184,7 +184,7 @@ greet("Alice", sayGoodbye);
 
 function iLove(fruit, callback){
     console.log("I love " + fruit)
-    callback(fruit) // we are setting up a blank funtion to use in the future.
+    callback(fruit) // we are setting up a blank funtion to use in the future. 
   }
   
   function otherFruit(fruit){
@@ -195,3 +195,6 @@ function iLove(fruit, callback){
 
 
  
+
+
+  
